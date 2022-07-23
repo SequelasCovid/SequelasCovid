@@ -1,0 +1,15 @@
+@media screen and (min-width:760px) {
+
+    .box {
+        width: 760;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    header {
+        justify-content: center;
+        gap: 25rem;
+    }
+}

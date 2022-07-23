@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styleform.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/mediaform.css">
+    <title>Formulário | Sequelas COVID-19</title>
+</head>
+
+<header>
+    <div id="title">
+        <h1>Sequêlas</h1>
+        <h1>COVID-19</h1>
+    </div>
+    <article>
+        <img src="./components/images/covid19-Branco.png" alt="covid19">
+    </article>
+</header>
+
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <div class="inputbox">
+                    <label for="data_nascimento"><b>Qual a sua data de nascimento?</b></label>
+                    <p></p>
+                    <Input type="date" name="data_nascimento" id="data_nascimento" class="inputformdate" required>
+                </div>
+                <br>
+                <div>
+                    <p><b>Qual o seu sexo?</b></p>
+                    <Input type="radio" name="sexo" id="feminino" value="feminino" class="inputformradio" required>
+                    <label for="feminino">Feminino</label>
+                    <br>
+                    <Input type="radio" name="sexo" id="masculino" value="masculino" class="inputformradio" required>
+                    <label for="masculino">Masculino</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="data_covid" class="label_2"><b>Aproximadamente que dia você sentiu os primeiros sintomas
+                            da
+                            COVID-19?</b></label>
+                    <p></p>
+                    <Input type="date" name="data_covid" id="data_covid" class="inputformdate" required>
+                </div>
+                <br>
+                <div>
+                    <p><b>Você foi internado no hospital devido a COVID-19?</b></p>
+                    <Input type="radio" name="radio_internado" id="radio_internado_sim" value="sim"
+                        class="inputformradio" required>
+                    <label for="radio_internado_sim">Sim</label>
+                    <br>
+                    <Input type="radio" name="radio_internado" id="radio_internado_nao" value="nao"
+                        class="inputformradio" required>
+                    <label for="radio_internado_nao">Não</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="data_entrada_hospital"><b>Aproximadamente que dia você teve sua primeira entrada no
+                            hospital?</b></label>
+                    <p></p>
+                    <Input type="date" name="data_entrada_hospital" id="data_entrada_hospital" class="inputformdate"
+                        required>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="data_alta_hospital"><b>Aproximadamente que dia você teve sua primeira alta do
+                            hospital?</b></label>
+                    <p></p>
+                    <Input type="date" name="data_alta_hospital" id="data_alta_hospital" class="inputformdate" required>
+                </div>
+                <br>
+                <div>
+                    <p><b>Você foi readmitido no hospital ou unidade de saúde após o seu caso de COVID-19?</b></p>
+                    <Input type="radio" name="radio_readmitido" id="radio_readmitido_sim" value="sim"
+                        class="inputformradio" required>
+                    <label for="radio_readmitido_sim">Sim</label>
+                    <Input type="radio" name="radio_readmitido" id="radio_readmitido_nao" value="nao"
+                        class="inputformradio" required>
+                    <label for="radio_readmitido_nao">Não</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="number" name="qtd_internado" id="qtd_internado" class="inputform" required>
+                    <label for="radio_readmitido_nao" class="labelinput">Quantas vezes?</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="motivo_internado" id="motivo_internado" class="inputform" required>
+                    <label for="motivo_internado" class="labelinput">Qual o motivo?</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="hospital_internado" id="hospital_internado" class="inputform" required>
+                    <label for="hospital_internado" class="labelinput">Qual o nome do(s) hospital(s)?</label>
+                </div>
+                <br>
+                <div>
+                    <p><b>Você se sente totalmente recuperado da COVID-19?</b></p>
+                    <Input type="radio" name="radio_recuperado" id="radio_recuperado_discordo_totalmente"
+                        value="discordo_totalmente" class="inputformradio" required>
+                    <label for="radio_recuperado_discordo_totalmente">Discordo totalmente</label>
+                    <br>
+                    <Input type="radio" name="radio_recuperado" id="radio_recuperado_discordo" value="discordo"
+                        class="inputformradio" required>
+                    <label for="radio_recuperado_discordo">Discordo</label>
+                    <br>
+                    <Input type="radio" name="radio_recuperado" id="radio_recuperado_discordo_um_pouco"
+                        value="discordo_um_pouco" class="inputformradio" required>
+                    <label for="radio_recuperado_discordo_um_pouco">Discordo um pouco</label>
+                    <br>
+                    <Input type="radio" name="radio_recuperado" id="radio_recuperado_concordo_um_pouco"
+                        value="concordo_um_pouco" class="inputformradio" required>
+                    <label for="radio_recuperado_concordo_um_pouco">Concordo um pouco</label>
+                    <br>
+                    <Input type="radio" name="radio_recuperado" id="radio_recuperado_concordo" value="concordo"
+                        class="inputformradio" required>
+                    <label for="radio_recuperado_concordo">Concordo</label>
+                    <br>
+                    <Input type="radio" name="radio_recuperado" id="radio_recuperado_concordo_totalmente"
+                        value="concordo_totalmentee" class="inputformradio" required>
+                    <label for="radio_recuperado_concordo_totalmente">Concordo totalmente</label>
+                </div>
+                <br>
+                <div>
+                    <p><b>Você foi teve acesso a vacina da COVID-19?</b></p>
+                    <Input type="radio" name="radio_readmitido" id="radio_readmitido_sim" value="sim"
+                        class="inputformradio" required>
+                    <label for="radio_readmitido_sim">Sim</label>
+                    <Input type="radio" name="radio_readmitido" id="radio_readmitido_nao" value="nao"
+                        class="inputformradio" required>
+                    <label for="radio_readmitido_nao">Não</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="hospital_internado" id="hospital_internado" class="inputform" required>
+                    <label for="hospital_internado" class="labelinput">Qual o nome da vacina?</label>
+                </div>
+                <br>
+                <div>
+                    <p><b>Quando você contraiu a COVID-19 já tinha recebido a primeira dose da vacina?</b></p>
+                    <Input type="radio" name="radio_readmitido" id="radio_readmitido_sim" value="sim"
+                        class="inputformradio" required>
+                    <label for="radio_readmitido_sim">Sim</label>
+                    <Input type="radio" name="radio_readmitido" id="radio_readmitido_nao" value="nao"
+                        class="inputformradio" required>
+                    <label for="radio_readmitido_nao">Não</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="hospital_internado" id="hospital_internado" class="inputform" required>
+                    <label for="hospital_internado" class="labelinput">A quanto tempo da primeira dose você contraiu a
+                        COVID-19?</label>
+                </div>
+                <br><br>
+                <div>
+                    <input type="submit" name="enviar" id="submit">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
